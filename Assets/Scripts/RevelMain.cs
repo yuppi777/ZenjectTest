@@ -6,14 +6,14 @@ using Zenject;
 public class RevelMain : MonoBehaviour
 {
     
-    void Start()
+   
+
+    [Inject]
+    void ConstructPresenter(IRevelData revelData,  IOutput output)
     {
-        
+        var Presenter = new RevelPresenter(revelData,output);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
+   
 }

@@ -9,11 +9,13 @@ using System.Linq;
 public class RevelPresenter 
 {
     IRevelData RevelData = default;
-    RevelView View = default;
-    public RevelPresenter(IRevelData revelData,RevelView revelView)
+    IOutput Output = default;
+    //RevelView View = default;
+    public RevelPresenter(IRevelData revelData,IOutput output)
     {
         RevelData = revelData;
-        View = revelView;
+        //View = revelView;
+        Output = output;
 
         Bind();
     }
