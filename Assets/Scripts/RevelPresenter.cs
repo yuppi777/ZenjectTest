@@ -17,12 +17,16 @@ public class RevelPresenter
         //View = revelView;
         Output = output;
 
+        
+        output.Log(RevelData.GetRevel(),RevelData.GetAddUp());
         Bind();
     }
     void Bind()
     {
-       //RevelData.GetRevel()
-       //     .Where(x=>RevelData.GetRevel()== )
+        RevelData.GetRevel();
+        RevelData.GetAddUp();
+        
+
     }
   
 }

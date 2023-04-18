@@ -13,10 +13,10 @@ public class RevelView : MonoBehaviour,IOutput
     public void AddUpChange(int addup) => AddUp = addup;
     public void LevelChange(string level) => Level = level;
 
-    public void Log()
+    public void Log(string level,int addup)
     {
-        Debug.Log(AddUp);
-        Debug.Log(Level);
+        Debug.Log(level);
+        Debug.Log(addup);
     }
 
    

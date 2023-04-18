@@ -5,7 +5,7 @@ using UnityEngine;
 public interface IOutput 
 {
 
-    public void Log();
+    public void Log(string level, int addup);
 
 
 }
